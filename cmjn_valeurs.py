@@ -1,13 +1,13 @@
 from PIL import Image
 
 # Charger l'image et convertir en mode CMJN
-image_path = "HMDS7025.jpg"  # modifier par ton fichier
+image_path = "moon.jpg"  # modifier par ton fichier
 image = Image.open(image_path).convert("CMYK")
 
 # Redimensionner pour limiter le nombre de pixels (ex largeur 50)
 new_width = 50
 width, height = image.size
-ratio = height / width
+ratio = height / width *0.5
 new_height = int(new_width * ratio)
 image = image.resize((new_width, new_height))
 

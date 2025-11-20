@@ -1,7 +1,6 @@
+from PIL import Image
 
-​from PIL import Image
-
-image = Image.open("image_cmyk.jpg").convert("CMYK")
+image = Image.open("moon.jpg").convert("CMYK")
 c, m, y, k = image.split()
 
 c.save("cyan_layer.png")

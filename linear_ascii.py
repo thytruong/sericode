@@ -4,14 +4,14 @@ from PIL import Image
 ASCII_CHARS = [" ", ".", ":", "-", "=", "+", "*", "#", "%", "@"]
 
 # Chargement de l'image
-image_path = "ton_image.jpg"  # modifier avec le chemin de ton image
+image_path = "moon.jpg"  # modifier avec le chemin de ton image
 image = Image.open(image_path)
 
 # Redimensionnement width fixe et hauteur proportionnelle
-new_width = 80
+new_width = 150
 width, height = image.size
 ratio = height / width
-new_height = int(new_width * ratio)
+new_height = int(new_width * ratio *0.5)
 image = image.resize((new_width, new_height))
 
 # Conversion en niveaux de gris
