@@ -3,7 +3,7 @@ from PIL import Image, ImageCms
 img = Image.open('soleil.jpg')
 
 # Available via https://www.adobe.com/support/downloads/iccprofiles/iccprofiles_win.html
-fp = 'icc/icc/'
+fp = 'icc/'
 rgb_icc = fp+"RGB/" + 'AppleRGB.icc'
 cmyk_icc = fp+"CMYK/"+"WebCoatedSWOP2006Grade5.icc"
 
